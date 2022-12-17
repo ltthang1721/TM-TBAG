@@ -1,0 +1,315 @@
+
+
+a {
+    margin: 3px;
+    padding: 2px 4px;
+    font-weight: bold;
+    color: #23468c;
+    text-decoration: none;
+  
+  }
+  
+  a:hover {
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .photobanner {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  
+  .slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .text {
+    color: #23468c;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #23468c;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px
+    }
+  }
+  
+  .colframe {
+    border: 2px solid #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    height: 180px;
+    padding: 45px;
+    font-size: 30px;
+  
+    text-align: center;
+    background-color: #7c7a7a;
+  }
+  
+  .col-other {
+    border: 1px solid #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    width: 240px;
+    height: 165px;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -84px;
+    margin-left: -40px;
+    text-align: center;
+    color: white;
+  }
+  
+  .col-other:hover {
+    font-size: 19px;
+  }
+  
+  .col-3 {
+    margin: auto;
+  }
+  
+  p {
+
+    text-align: center;
+    padding-top: 10px;
+  }  
+  
+  .textImg1 {
+    background-image: url(./ig/bo13.jpg);
+    height: 404px;
+    width: 630px;
+  }
+  
+  .textImg2 {
+    background-image: url(./ig/bo27thayco.jpg);
+    height: 200px;
+    width: 250px;
+    margin-bottom: 5px ;
+  
+  }
+  
+  .textImg3 {
+    height: 250px;
+    width: 350px;
+    margin-bottom: 5px ;
+  
+  }
+  
+  .textImg4 {
+    background-image: url(./ig/lang6.jpg);
+    height: 200px;
+    width: 250px;
+  
+  
+  }
+  
+  .textImg5 {
+    background-image: url(./ig/bo29.jpg);
+    height: 200px;
+    width: 250px;
+  
+  
+  }
+  
+  .detail {
+    padding: 0 32px;
+    min-height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    background: white;
+    border: 1px solid #23468c;
+    color: #23468c;
+    margin-left:-10px ;
+    margin-top: 10px ;
+  }
+  
+  .detail:hover {
+    color: #ffffff;
+    background-color: #23468c;
+    border: #23468c;
+  }
+  
+  
+  
+  #bt_imageeffect {
+    margin-left: 10px auto;
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+  }
+  
+  .galleryItem {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    border: solid 10px #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  .galleryItem img {
+    overflow:hidden;
+    width: 250px;
+    height: 250px;
+  
+  
+  }
+  
+  .caption {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    z-index: 15;
+    /* background-image: url(./ig/bo2.jpg); */
+    overflow: hidden;
+  }
+  .caption::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 0;
+    font-family: 'Croissant One', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: #ffffff;
+    background: repeat;
+    overflow: hidden;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+  }
+  .caption::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: -0;
+    left: 0;
+    width: 250px;
+    height: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #fff;
+    background:repeat;
+    overflow: hidden;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+  }
+  .caption:hover::before {
+    height: 125px;
+  }
+  .caption:hover::after {
+    bottom: 0;
+    height: 125px;
+  }
+  
+  
+  .caption1 {
+    position: relative;
+    display: inline-block;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .caption1::before {
+    content: attr(data-title);
+    position: absolute;
+    font-family: Muli;
+    background: repeat;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin-top: 310px;
+    margin-left: 20px;
+  
+  
+    
+  }
+
+  .caption2 {
+    position: relative;
+    display: inline-block;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .caption2::before {
+    content: attr(data-title);
+    position: absolute;
+    font-family: Muli;
+    /* margin-top: 190px; */
+    padding-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background: repeat;
+    overflow: hidden;
+    background: rgba(151, 151, 151, 0.747);
+    text-transform: uppercase;
+    width:350px;
+  }
+
+    .thumbnail img {
+    transition-duration: 0.3s;
+    margin-bottom: 50px;
+  }
+  
+  .thumbnail img:hover {
+    transform: scale(1.2);
+  }
+  
+  
